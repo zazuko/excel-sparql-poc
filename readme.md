@@ -47,17 +47,21 @@ SELECT * WHERE {
   	?term schema:alternateName ?altNameDE;
   		  schema:alternateName ?altNameIT;
   		  schema:alternateName ?altNameFR;
-      	  schema:name ?nameDE;
+  		  schema:alternateName ?altNameRM;
+      	  	  schema:name ?nameDE;
   		  schema:name ?nameIT;
-  		  schema:name ?nameFR.
+  		  schema:name ?nameFR;
+  		  schema:name ?nameRM.
 
     FILTER(langMatches(lang(?altNameDE), 'de'))
     FILTER(langMatches(lang(?altNameIT), 'it'))
     FILTER(langMatches(lang(?altNameFR), 'fr'))
+    FILTER(langMatches(lang(?altNameRM), 'rm'))
 
     FILTER(langMatches(lang(?nameDE), 'de'))
     FILTER(langMatches(lang(?nameIT), 'it'))
     FILTER(langMatches(lang(?nameFR), 'fr'))
+    FILTER(langMatches(lang(?nameRM), 'rm'))
 }
     ",
     HEADERS = [#"Content-Type" = "application/x-www-form-urlencoded", #"Accept" = "text/csv"],
