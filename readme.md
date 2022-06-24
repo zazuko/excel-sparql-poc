@@ -2,6 +2,8 @@
 
 ## What are Excel Linked Data Types?
 
+![linked-data-types](https://user-images.githubusercontent.com/8033981/174072492-b43a2d34-9c1a-497a-b5a5-3ad2beddaa8c.gif)
+
 That's cool isn't it?
 
 ## Can I create my own data types using SPARQL?
@@ -26,7 +28,9 @@ Power Query is a tool get Data From differnet sources and Transform it. Good new
 
 So you have to use Windows right now. But once you finished your Data Type it will work on a Mac as well.
 
-### How todo it
+### How it's done
+
+![query](https://user-images.githubusercontent.com/8033981/174072432-e081a0df-46eb-412d-a4c4-b058488d1837.gif)
 
 ### Template for a POST request in Power Query
 
@@ -43,17 +47,21 @@ SELECT * WHERE {
   	?term schema:alternateName ?altNameDE;
   		  schema:alternateName ?altNameIT;
   		  schema:alternateName ?altNameFR;
-      	  schema:name ?nameDE;
+  		  schema:alternateName ?altNameRM;
+      	  	  schema:name ?nameDE;
   		  schema:name ?nameIT;
-  		  schema:name ?nameFR.
+  		  schema:name ?nameFR;
+  		  schema:name ?nameRM.
 
     FILTER(langMatches(lang(?altNameDE), 'de'))
     FILTER(langMatches(lang(?altNameIT), 'it'))
     FILTER(langMatches(lang(?altNameFR), 'fr'))
+    FILTER(langMatches(lang(?altNameRM), 'rm'))
 
     FILTER(langMatches(lang(?nameDE), 'de'))
     FILTER(langMatches(lang(?nameIT), 'it'))
     FILTER(langMatches(lang(?nameFR), 'fr'))
+    FILTER(langMatches(lang(?nameRM), 'rm'))
 }
     ",
     HEADERS = [#"Content-Type" = "application/x-www-form-urlencoded", #"Accept" = "text/csv"],
