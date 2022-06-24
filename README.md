@@ -25,13 +25,13 @@ This is documented here:
 - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-excel-featured-tables
 - https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-create-excel-featured-tables
 
-If you would like to integrate this in your organization, we at [Zazuko](https://zazuko.com/) can support you. Please get in [contact](mailto:info@zazuko.com?subject=Excel Linked Data Types) with us.
+If you would like to integrate this in your organization, we at [Zazuko](https://zazuko.com/) can support you. Please get in [contact](mailto:info@zazuko.com?subject=Excel%20Linked%20Data%20Types) with us.
 
 ## Power Query
 
 Without Power BI we can still do data types, even though the integration is (a lot) less fancy. This is called [Power Query](https://support.microsoft.com/en-us/office/about-power-query-in-excel-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a) and in the example sheet provided in this repository, there is an embedded SPARQL query.
 
-Power Query is a tool to fetch data from different sources. The example can only be edited by the Windows version of Excel. The *latest* version of Office for Mac supports Power Query, unfortunately only for running it. Click the *Refresh All* button in the *Data* tab of Excel. If you get `UNKNOWN` in one of your cells, your version of Excel is not recent enough.
+Power Query is a tool to fetch data from different sources. The example can only be edited by the Windows version of Excel. The *latest* version of Office for Mac supports Power Query, unfortunately only for running it. Click the *Refresh All* button in the *Data* tab of Excel. If you get `UNKNOWN` in one of your cells, your version of Excel is not recent enough.
 
 ### How it's done
 
