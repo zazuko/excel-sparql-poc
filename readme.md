@@ -30,7 +30,7 @@ So you have to use Windows right now. But once you finished your Data Type it wi
 
 ### How it's done
 
-![query](https://user-images.githubusercontent.com/8033981/174072432-e081a0df-46eb-412d-a4c4-b058488d1837.gif)
+https://user-images.githubusercontent.com/8033981/175544919-eab4482c-c87c-4893-91d2-d5845918ea81.mp4
 
 ### Template for a POST request in Power Query
 
