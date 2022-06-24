@@ -8,7 +8,7 @@ But we can connect external data sources directly to Excel. That sounds like som
 
 ![linked-data-types](https://user-images.githubusercontent.com/8033981/174072492-b43a2d34-9c1a-497a-b5a5-3ad2beddaa8c.gif)
 
-This example is based on a data source provided by Microsoft. Once we declare the type, Excel offers to add additional columns that are fetched from an external data source and are linked to the type. It is not clear to the user where this data is coming from.
+This example is based on a data source provided by Microsoft. Once we declare the type, Excel offers to add additional columns that are fetched from an external data source and are linked to the type. We can update this data any time automatically. Unfortunately it is not transparent to the user where this data is coming from.
 
 ## So can we create our data types using SPARQL?
 
