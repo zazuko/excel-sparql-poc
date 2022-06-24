@@ -83,4 +83,4 @@ SELECT * WHERE {
     Source
 ```
 
-This example fetches abbreviations and labels for Swiss Government departments in all four official Languages in Switzerland.
+This example fetches abbreviations and labels for Swiss Government departments in all four official Languages in Switzerland. You can run the query [directly on the SPARQL endpoint](https://s.zazuko.com/c4cdgf).
